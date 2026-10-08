@@ -9,13 +9,12 @@ const router = express.Router();
 router.post('/register', authController.register);
 router.post('/login', authController.login);
 router.post('/login/phone', authController.loginWithPhone);
-
-// Rotas protegidas
-router.get('/verify', authenticate, authController.verifyToken);
-router.put('/profile', authenticate, authController.updateProfile);
 router.post('/send-verification-code', authController.sendVerificationCode);
-router.get('/me', authenticate, authController.getProfile); // Nova rota
 
+// Rotas protegidas - IMPORTANTE: /verify deve estar aqui
+router.get('/verify', authenticate, authController.verifyToken);
+router.get('/me', authenticate, authController.getProfile);
+router.put('/profile', authenticate, authController.updateProfile);
 router.put('/change-password', authenticate, authController.changePassword);
 router.put('/change-phone', authenticate, authController.changePhone);
 router.delete('/account', authenticate, authController.deleteAccount);
