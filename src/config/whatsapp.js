@@ -4,7 +4,7 @@
 
 export const WhatsAppConfig = {
   // Número do dono da cozinha (com código do país, sem +)
-  KITCHEN_WHATSAPP: '258841234567', // ← ALTERE AQUI para o número real
+  KITCHEN_WHATSAPP: '258846967721', // ← ALTERE AQUI para o número real
   
   // URL base do WhatsApp Web/App
   BASE_URL: 'https://wa.me/',
