@@ -1,0 +1,4 @@
+git init
+git add .
+git commit -m "feat: adicionar modais de termos, privacidade e ajuda no footer"
+git push origin main
